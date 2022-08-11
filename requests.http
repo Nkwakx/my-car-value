@@ -4,8 +4,8 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-     "email": "nhlaka@gmail.com",
-     "password": "12345678abc"
+     "email": "nhlakah@gmail.com",
+     "password": "12345abc"
 }
 ### signin
 
@@ -13,11 +13,17 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-     "email": "nhlakas@gmail.com",
-     "password": "12345678abc"
+     "email": "nhlakah@gmail.com",
+     "password": "12345abc"
 }
 ### ID
 GET http://localhost:3000/auth/6
+
+### current user
+GET http://localhost:3000/auth/whoami
+
+### signout user
+POST http://localhost:3000/auth/signout
 
 ### 
 GET http://localhost:3000/auth?email=ask2323@gmail.com
@@ -34,8 +40,8 @@ content-type: application/json
      "email": "ask@YAHOO11.com"
 }
 
-### Set a color
-GET http://localhost:3000/auth/colors/green
+# ### Set a color
+# GET http://localhost:3000/auth/colors/green
 
-#### Get the color
-GET http://localhost:3000/auth/colors
+# #### Get the color
+# GET http://localhost:3000/auth/colors

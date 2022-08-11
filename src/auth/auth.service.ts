@@ -36,14 +36,14 @@ export class AuthService {
      async signIn(email: string, password: string) {
           const [user] = await this.usersService.find(email);
           if (!user) {
-               throw new NotFoundException("Your email or password is incorrect")
+               throw new NotFoundException("Your email or password is incorrect, make sure you are registered")
           }
           const [salt, storedHash] = user.password.split('.');
 
           const hash = (await scrypt(password, salt, 32)) as Buffer;
 
           if (storedHash !== hash.toString('hex')) {
-               throw new BadRequestException('Bad password');
+               throw new BadRequestException('Your email or password is incorrect');
           }
           return user;
      }
