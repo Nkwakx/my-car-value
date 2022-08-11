@@ -1,20 +1,29 @@
-### Create a new use
+### Create a new use / signup
 
 POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-     "email": "ask2323@gmail.com",
-     "password": "12345678abx"
+     "email": "nhlaka@gmail.com",
+     "password": "12345678abc"
+}
+### signin
+
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+     "email": "nhlakas@gmail.com",
+     "password": "12345678abc"
 }
 ### ID
-GET http://localhost:3000/auth/3
+GET http://localhost:3000/auth/6
 
 ### 
 GET http://localhost:3000/auth?email=ask2323@gmail.com
 
 ### 
-DELETE http://localhost:3000/auth/1
+DELETE http://localhost:3000/auth/5
 
 ### 
 
@@ -22,5 +31,11 @@ PATCH http://localhost:3000/auth/2
 content-type: application/json
 
 {
-     "email": "ask@YAHOO.com"
+     "email": "ask@YAHOO11.com"
 }
+
+### Set a color
+GET http://localhost:3000/auth/colors/green
+
+#### Get the color
+GET http://localhost:3000/auth/colors
