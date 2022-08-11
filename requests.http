@@ -1,0 +1,26 @@
+### Create a new use
+
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+     "email": "ask2323@gmail.com",
+     "password": "12345678abx"
+}
+### ID
+GET http://localhost:3000/auth/3
+
+### 
+GET http://localhost:3000/auth?email=ask2323@gmail.com
+
+### 
+DELETE http://localhost:3000/auth/1
+
+### 
+
+PATCH http://localhost:3000/auth/2
+content-type: application/json
+
+{
+     "email": "ask@YAHOO.com"
+}
