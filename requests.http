@@ -45,3 +45,18 @@ content-type: application/json
 
 # #### Get the color
 # GET http://localhost:3000/auth/colors
+
+
+### Create Reports
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+     "make": "nisan",
+     "model": "whateva",
+     "year": 1981,
+     "mileage": 1000000,
+     "lng": 0,
+     "lat": 0,
+     "price": 500000
+}
